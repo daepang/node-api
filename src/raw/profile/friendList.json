@@ -1,24 +1,26 @@
 {
   "listSize": 10,
   "totalSize": 100,
-  "friendList": [{
-    "friendName": "John",
-    "friendImageUrl": "url"
-  }],
-  "friendList": [{
-    "friendName": "Micheal",
-    "friendImageUrl": "url"
-  }],
-  "friendList": [{
-    "friendName": "Romeo",
-    "friendImageUrl": "url"
-  }],
-  "friendList": [{
-    "friendName": "Willson",
-    "friendImageUrl": "url"
-  }],
-  "friendList": [{
-    "friendName": "Messi",
-    "friendImageUrl": "url"
-  }]
+  "friendList": [
+    {
+      "friendName": "John",
+      "friendImageUrl": "url"
+    },
+    {
+      "friendName": "Micheal",
+      "friendImageUrl": "url"
+    },
+    {
+      "friendName": "Willson",
+      "friendImageUrl": "url"
+    },
+    {
+      "friendName": "Romeo",
+      "friendImageUrl": "url"
+    },
+    {
+      "friendName": "Messi",
+      "friendImageUrl": "url"
+    }
+  ]
 }
