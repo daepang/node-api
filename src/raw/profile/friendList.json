@@ -1,0 +1,24 @@
+{
+  "listSize": 10,
+  "totalSize": 100,
+  "friendList": [{
+    "friendName": "John",
+    "friendImageUrl": "url"
+  }],
+  "friendList": [{
+    "friendName": "Micheal",
+    "friendImageUrl": "url"
+  }],
+  "friendList": [{
+    "friendName": "Romeo",
+    "friendImageUrl": "url"
+  }],
+  "friendList": [{
+    "friendName": "Willson",
+    "friendImageUrl": "url"
+  }],
+  "friendList": [{
+    "friendName": "Messi",
+    "friendImageUrl": "url"
+  }]
+}
