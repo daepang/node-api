@@ -4,7 +4,7 @@
   "friendList": [
     {
       "friendName": "John",
-      "friendImageUrl": "url"
+      "friendImageUrl": "https://placeimg.com/200/100/animals/sepia"
     },
     {
       "friendName": "Micheal",
@@ -12,15 +12,15 @@
     },
     {
       "friendName": "Willson",
-      "friendImageUrl": "url"
+      "friendImageUrl": "https://placeimg.com/200/100/animals/sepia"
     },
     {
       "friendName": "Romeo",
-      "friendImageUrl": "url"
+      "friendImageUrl": "https://placeimg.com/200/100/animals/sepia"
     },
     {
       "friendName": "Messi",
-      "friendImageUrl": "url"
+      "friendImageUrl": "https://placeimg.com/200/100/animals/sepia"
     }
   ]
 }
