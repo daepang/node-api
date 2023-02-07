@@ -31,7 +31,7 @@ const PORT: number | string = process.env.PORT || 7443
 
 const corsOptions: any = {
   changeOrigin: true,
-  target: ['https://local.amoremall.com/', 'https://localhost:443'],
+  target: ['https://localhost:443'],
 }
 
 const options = {
