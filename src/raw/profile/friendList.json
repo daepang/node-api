@@ -4,23 +4,23 @@
   "friendList": [
     {
       "friendName": "John",
-      "friendImageUrl": "https://placeimg.com/200/100/animals/sepia"
+      "friendImageUrl": "https://picsum.photos/100/100"
     },
     {
       "friendName": "Micheal",
-      "friendImageUrl": "https://placeimg.com/200/100/animals/sepia"
+      "friendImageUrl": "https://picsum.photos/100/100"
     },
     {
       "friendName": "Willson",
-      "friendImageUrl": "https://placeimg.com/200/100/animals/sepia"
+      "friendImageUrl": "https://picsum.photos/100/100"
     },
     {
       "friendName": "Romeo",
-      "friendImageUrl": "https://placeimg.com/200/100/animals/sepia"
+      "friendImageUrl": "https://picsum.photos/100/100"
     },
     {
       "friendName": "Messi",
-      "friendImageUrl": "https://placeimg.com/200/100/animals/sepia"
+      "friendImageUrl": "https://picsum.photos/100/100"
     }
   ]
 }
