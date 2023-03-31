@@ -1,6 +1,7 @@
 import express, { Application, Request, Response } from 'express'
 import { indexRouter } from './routes/index'
 import { profileRouter } from "./routes/profile/profile";
+import { loginRouter } from "./routes/login/login";
 
 const routes = (app: Application): void => {
   const apiUri = '/'
@@ -11,6 +12,7 @@ const routes = (app: Application): void => {
   })
   app.use(`${apiUri}`, indexRouter)
   app.use(`${apiUri}profile`, profileRouter)
+  app.use(`${apiUri}login`, loginRouter)
 
 }
 
