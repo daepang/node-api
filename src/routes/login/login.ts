@@ -7,7 +7,7 @@ const loginRouter = express.Router();
 const loginResultData = {
     code: "SUC_PROC_0000",
     message: "요청이 정상적으로 처리되었습니다.",
-    responseTime: DateUtils.getDateByTime('yyyyMMddhhmmss', '', ''),
+    responseTime: DateUtils.getDateByTime('yyyyMMddhhmmss', ''),
     response: {
         status: "success"
     }
