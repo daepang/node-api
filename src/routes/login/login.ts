@@ -24,6 +24,8 @@ loginRouter.post('/proc', async (req: Request, res: Response): Promise<any> => {
     const response = {...loginResultData.response, loginId: req.query.id};
     const result = {...loginResultData, response: response};
 
+    console.log(result);
+
     if ( req.query.id === 'testAdmin') {
         res.json(loginResultData);
     } else {
