@@ -16,6 +16,12 @@ const loginResultData = {
     }
 }
 
+const loginFailData = {
+    code: "FAIL_0000",
+    message: "ID를 입력해주세요.",
+    responseTime: DateUtils.getDateByTime('yyyyMMddhhmmss', '')
+}
+
 loginRouter.post('/proc', async (req: Request, res: Response): Promise<any> => {
     console.log("login req.params: ", req.params);
     console.log("login req.query: ", req.query);
@@ -27,7 +33,7 @@ loginRouter.post('/proc', async (req: Request, res: Response): Promise<any> => {
     if ( req.query.id ) {
         res.json(result);
     } else {
-        res.json({code: 'fail'});
+        res.json(loginFailData);
     }
 })
 
