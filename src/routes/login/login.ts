@@ -37,4 +37,19 @@ loginRouter.post('/proc', async (req: Request, res: Response): Promise<any> => {
     }
 })
 
+loginRouter.post('/check', async (req: Request, res: Response): Promise<any> => {
+    console.log("login req.params: ", req.params);
+    console.log("login req.query: ", req.query);
+    console.log("login req.body: ", req.body);
+
+    const response = {...loginResultData.response, loginId: req.query.id};
+    const result = {...loginResultData, response: response};
+
+    if ( req.query.id ) {
+        res.json(result);
+    } else {
+        res.json(loginFailData);
+    }
+})
+
 export { loginRouter }
