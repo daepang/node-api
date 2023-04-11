@@ -1,9 +1,9 @@
-import winston from "winston";
-import chalk from "chalk";
+import winston from 'winston';
+import chalk from 'chalk';
 
 const options = {
   console: {
-    level: "debug",
+    level: 'debug',
     handleExceptions: true,
     json: false,
     colorize: true,
@@ -19,18 +19,18 @@ const levels = {
 };
 
 const colors = {
-  error: "red",
-  warn: "yellow",
-  info: "green",
-  verbose: "gray",
-  debug: "blue",
-  silly: "grey",
+  error: 'red',
+  warn: 'yellow',
+  info: 'green',
+  verbose: 'gray',
+  debug: 'blue',
+  silly: 'grey',
 };
 
 const level = () => {
-  const env = process.env.NODE_ENV || "development";
-  const isDevelopment = env === "development";
-  return isDevelopment ? "debug" : "warn";
+  const env = process.env.NODE_ENV || 'development';
+  const isDevelopment = env === 'development';
+  return isDevelopment ? 'debug' : 'warn';
 };
 
 winston.addColors(colors);
@@ -40,13 +40,11 @@ const winstonFormat = winston.format.combine(
     all: true,
   }),
   winston.format.label({
-    label: "[LOGGER]",
+    label: '[LOGGER]',
   }),
-  winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss:ms" }),
+  winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss:ms' }),
   winston.format.align(),
-  winston.format.printf(
-    (info) => `${info.timestamp} ${info.level}: ${info.message}`
-  )
+  winston.format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`),
 );
 
 const logger = winston.createLogger({
@@ -57,10 +55,10 @@ const logger = winston.createLogger({
   transports: [
     new winston.transports.Console(options.console),
     new winston.transports.File({
-      filename: "logs/error.log",
-      level: "error",
+      filename: 'logs/error.log',
+      level: 'error',
     }),
-    new winston.transports.File({ filename: "logs/all.log" }),
+    new winston.transports.File({ filename: 'logs/all.log' }),
   ],
   exitOnError: false,
 });

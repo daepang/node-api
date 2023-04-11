@@ -1,5 +1,5 @@
-import logger from "../logger/logger";
-import { BaseError } from "./baseError";
+import logger from '../logger/logger';
+import { BaseError } from './baseError';
 
 function logError(err: any) {
   logger.error(err);

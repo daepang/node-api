@@ -5,4 +5,4 @@ declare global {
   // var db: mysql.Connection;
 }
 
-export {}
+export {};
