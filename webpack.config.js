@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const { NODE_ENV = 'production' } = process.env
+const { NODE_ENV = 'production' } = process.env;
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.ts'),
@@ -32,4 +32,4 @@ module.exports = {
       chunks: 'all',
     },
   },
-}
+};
