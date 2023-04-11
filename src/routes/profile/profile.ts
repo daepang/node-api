@@ -1,36 +1,38 @@
-import express, {Request, Response} from 'express'
+import express, { Request, Response } from 'express';
 
-import profileDatailJson from '../../raw/profile/profileDetail.json'
-import FriendListJson from '../../raw/profile/friendList.json'
+import DateUtils from '../../utils/DateUtils';
+
+import profileDatailJson from '../../raw/profile/profileDetail.json';
+import FriendListJson from '../../raw/profile/friendList.json';
 
 const profileRouter = express.Router();
 
 const profileDetailData = {
-    code: "SUC_PROC_0000",
-    message: "요청이 정상적으로 처리되었습니다.",
-    responseTime: "20230112111359",
-    response: {
-        result: profileDatailJson,
-        status: "success"
-    }
-}
+  code: 'SUC_PROC_0000',
+  message: '요청이 정상적으로 처리되었습니다.',
+  responseTime: DateUtils.getDateByTime('yyyyMMddhhmmss', ''),
+  response: {
+    result: profileDatailJson,
+    status: 'success',
+  },
+};
 
 const friendListData = {
-    code: "SUC_PROC_0000",
-    message: "요청이 정상적으로 처리되었습니다.",
-    responseTime: "20230112111359",
-    response: {
-        result: FriendListJson,
-        status: "success"
-    }
-}
+  code: 'SUC_PROC_0000',
+  message: '요청이 정상적으로 처리되었습니다.',
+  responseTime: DateUtils.getDateByTime('yyyyMMddhhmmss', ''),
+  response: {
+    result: FriendListJson,
+    status: 'success',
+  },
+};
 
 profileRouter.get('/detail', async (req: Request, res: Response): Promise<any> => {
-    res.json(profileDetailData);
-})
+  res.json(profileDetailData);
+});
 
 profileRouter.get('/friendList', async (req: Request, res: Response): Promise<any> => {
-    res.json(friendListData);
-})
+  res.json(friendListData);
+});
 
-export { profileRouter }
+export { profileRouter };
