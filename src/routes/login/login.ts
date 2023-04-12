@@ -28,6 +28,12 @@ const passwordEmptyRes = {
   responseTime: DateUtils.getDateByTime('yyyyMMddhhmmss', ''),
 };
 
+const errorRes = {
+  code: 'FAIL_ERROR',
+  message: '오류가 발생했습니다.',
+  responseTime: DateUtils.getDateByTime('yyyyMMddhhmmss', ''),
+};
+
 loginRouter.post('/proc', async (req: Request, res: Response): Promise<any> => {
   console.log('login req.params: ', req.params);
   console.log('login req.query: ', req.query);
@@ -42,6 +48,8 @@ loginRouter.post('/proc', async (req: Request, res: Response): Promise<any> => {
     res.json(idEmptyRes);
   } else if (!req.query.password) {
     res.json(passwordEmptyRes);
+  } else {
+    res.json(errorRes);
   }
 });
 
