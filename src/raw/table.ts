@@ -699,4 +699,4 @@ export default [
     gender: 'Female',
     birthDate: '1981-10-19T03:24:00.000Z',
   },
-]
+];
