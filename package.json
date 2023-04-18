@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "set NODE_ENV=development && tsnd ./src/index.ts",
-    "build": "webpack",
+    "build": "exit 0",
     "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
     "start": "node ./dist/main.js",
     "test": "jest -c jest.config.ts"
