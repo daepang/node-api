@@ -17,6 +17,7 @@
     "@types/pem": "^1.9.6",
     "axios": "^0.24.0",
     "body-parser": "^1.19.0",
+    "bufferutil": "^4.0.7",
     "chalk": "^4.1.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -29,6 +30,7 @@
     "request": "^2.79.0",
     "socket.io": "3.0.0",
     "uglifyjs-webpack-plugin": "^1.1.2",
+    "utf-8-validate": "^6.0.3",
     "winston": "^3.3.0"
   },
   "devDependencies": {
@@ -57,9 +59,9 @@
     "declaration-bundler-webpack-plugin": "^1.0.3",
     "eslint": "7.0.0",
     "eslint-config-prettier": "^7.1.0",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.0",
-    "eslint-loader": "^4.0.2",
     "express": "^4.17.1",
     "jest": "^27.4.5",
     "jshint": "^2.13.4",
