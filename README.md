@@ -9,6 +9,9 @@
 ### 실행
 - yarn dev
 
+### Local Baseurl
+- https://localhost:7443/
+
 ### API LIST
 - '/profile/detail'
 - '/profile/friendList'
